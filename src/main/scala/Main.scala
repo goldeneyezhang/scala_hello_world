@@ -1,3 +1,4 @@
+import scala.collection.mutable.ArrayBuffer
 object Main extends App {
   println(1)
   println(1+1)
@@ -67,8 +68,31 @@ object Main extends App {
   //Class
   val point2 = new Point2(2,3)
   println(point2)
-  val point3 = new Point2(1)
-  println(point3.x)
+  val pointx = new Point2(1)
+  println(pointx.x)
+
+  val point3 = new Point3
+  point3.x = 99
+  point3.y = 101
+
+  val iterator = new IntIterator(10)
+  iterator.next() 
+  iterator.next()
+
+  //Subtyping
+
+  val dog = new Dog("Harry")
+  val cat = new Cat("Sally")
+
+  val animals = ArrayBuffer.empty[Pet]
+  animals.append(dog)
+  animals.append(cat)
+  animals.foreach(pet => println(pet.name))
+  
+  // Mixins
+  val d = new D
+  println(d.message)
+  println(d.loudMessage)
 }
 object IdFactory {
   private var counter = 0
