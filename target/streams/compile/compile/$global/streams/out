@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:86:17: not found: value ArrayBuffer[0m
-[0m[[0m[31merror[0m] [0m[0m  val animals = ArrayBuffer.empty[Pet][0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Pet.scala:29:60: identifier expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0mclass RichStringIter extends StringIterator("scala") with [0m
+[0m[[0m[31merror[0m] [0m[0m                                                          ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

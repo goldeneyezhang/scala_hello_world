@@ -93,6 +93,9 @@ object Main extends App {
   val d = new D
   println(d.message)
   println(d.loudMessage)
+
+  val richStringIter = new RichStringIter
+  richStringIter foreach println
 }
 object IdFactory {
   private var counter = 0
