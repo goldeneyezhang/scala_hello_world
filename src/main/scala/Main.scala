@@ -96,6 +96,13 @@ object Main extends App {
 
   val richStringIter = new RichStringIter
   richStringIter foreach println
+
+  // Higher Order Functions
+  println("-----High Order Functions-----")
+  val salaries = Seq(20000, 70000, 40000)
+  val doubleSalary = (x: Int) => x*2
+  val newSalaries = salaries.map(doubleSalary)
+  salaries.map(x => println(x))
 }
 object IdFactory {
   private var counter = 0
@@ -124,4 +131,17 @@ object TypeHierarchy {
 
   }
   
+}
+object SaralyRaiser {
+  private def promotion(salaries: List[Double], promotionFunction:
+    salaries.map(promotionFunction)
+
+  def smallPromotion(salaries: List[Double]): List[Double] = 
+    promotion(salaries,salary => salary * 1.1)
+
+  def bigPromotion(salaries: List[Double]): List[Double] =
+    promotion(salaries, salary => salary * math.log(salary))
+  
+  def hugePromotion(salaries: List[Double]): List[Double] =
+    promotion(salaries, salary => salary * salary)
 }

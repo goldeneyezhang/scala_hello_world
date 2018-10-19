@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Pet.scala:29:60: identifier expected but eof found.[0m
-[0m[[0m[31merror[0m] [0m[0mclass RichStringIter extends StringIterator("scala") with [0m
-[0m[[0m[31merror[0m] [0m[0m                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:137:17: ')' expected but '(' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    salaries.map(promotionFunction)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:137:35: ':' expected but ')' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    salaries.map(promotionFunction)[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:147:1: identifier expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
