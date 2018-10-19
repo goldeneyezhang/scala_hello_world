@@ -12,16 +12,31 @@
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(E:\scala\hello-world\src\main\scala\Main.scala)[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to E:\scala\hello-world\target\scala-2.12\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.3:compile for Scala 2.12.7[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.3:compile for Scala 2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 1e963a52 for Scala compiler version 2.12.7[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 1103c692 for Scala compiler version 2.12.7[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes;d:\Users\yibozhang\.sbt\boot\scala-2.12.7\lib\scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	E:\scala\hello-world\target\scala-2.12\classes;d:\Users\yibozhang\.ivy2\cache\org.typelevel\cats-core_2.12\jars\cats-core_2.12-1.4.0.jar;d:\Users\yibozhang\.ivy2\cache\org.typelevel\cats-macros_2.12\jars\cats-macros_2.12-1.4.0.jar;d:\Users\yibozhang\.ivy2\cache\org.typelevel\machinist_2.12\jars\machinist_2.12-0.6.5.jar;d:\Users\yibozhang\.sbt\boot\scala-2.12.7\lib\scala-reflect.jar;d:\Users\yibozhang\.ivy2\cache\org.typelevel\cats-kernel_2.12\jars\cats-kernel_2.12-1.4.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.378606797 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m	E:\scala\hello-world\target\scala-2.12\classes;d:\Users\yibozhang\.ivy2\cache\org.typelevel\cats-core_2.12\jars\cats-core_2.12-1.4.0.jar;d:\Users\yibozhang\.ivy2\cache\org.typelevel\cats-macros_2.12\jars\cats-macros_2.12-1.4.0.jar;d:\Users\yibozhang\.ivy2\cache\org.typelevel\machinist_2.12\jars\machinist_2.12-0.6.5.jar;d:\Users\yibozhang\.sbt\boot\scala-2.12.7\lib\scala-reflect.jar;d:\Users\yibozhang\.ivy2\cache\org.typelevel\cats-kernel_2.12\jars\cats-kernel_2.12-1.4.0.jar;d:\Users\yibozhang\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\bundles\scala-parser-combinators_2.12-1.1.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.33904216 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from IdFactory...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(IdFactory)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(IdFactory)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(IdFactory,ModifiedNames(changes = UsedName(eq,[Default]), UsedName(ne,[Default]), UsedName(toString,[Default]), UsedName(==,[Default]), UsedName(finalize,[Default]), UsedName(clone,[Default]), UsedName(notify,[Default]), UsedName($isInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(IdFactory,[Default]), UsedName(isInstanceOf,[Default]), UsedName(##,[Default]), UsedName(hashCode,[Default]), UsedName(!=,[Default]), UsedName(notifyAll,[Default]), UsedName(asInstanceOf,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName($asInstanceOf,[Default]), UsedName(wait,[Default]))) invalidates 1 classes due to The IdFactory has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(eq,[Default]), UsedName(ne,[Default]), UsedName(toString,[Default]), UsedName(==,[Default]), UsedName(finalize,[Default]), UsedName(clone,[Default]), UsedName(notify,[Default]), UsedName($isInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(IdFactory,[Default]), UsedName(isInstanceOf,[Default]), UsedName(##,[Default]), UsedName(hashCode,[Default]), UsedName(!=,[Default]), UsedName(notifyAll,[Default]), UsedName(asInstanceOf,[Default]), UsedName(getClass,[Default]), UsedName(synchronized,[Default]), UsedName($asInstanceOf,[Default]), UsedName(wait,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(IdFactory)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set()[0m
