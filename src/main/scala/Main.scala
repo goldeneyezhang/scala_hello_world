@@ -50,7 +50,51 @@ object Main extends App {
 
   // Ojbects
   println("-----Objects-----")
+  val newId: Int = IdFactory.create()
+  println(newId)
+  val newerId: Int = IdFactory.create()
+  println(newerId)
+
+  //Traits
+  println("-----Traits-----")
+  val greeter1 = new DefaultGreeter()
+  greeter1.greet("Scala developer")
+
+  val customerGreeter = new CustomizableGreeter("How are you, ","?")
+  customerGreeter.greet("Scala developer")
+
+  TypeHierarchy.show()
+  //Class
+  val point2 = new Point2(2,3)
+  println(point2)
+  val point3 = new Point2(1)
+  println(point3.x)
 }
 object IdFactory {
   private var counter = 0
+  def create(): Int = {
+    counter += 1
+    counter
+    }
+}
+object TypeHierarchy {
+  def show(): Unit = {
+   println("------Type Hierarchy-----")
+    val list: List[Any] = List(
+      "a string",
+      732,
+      'c',
+      true,
+      () => "an anonymous function returning a string"
+    )
+    list.foreach(element => println(element))
+
+    val x: Long = 987654321
+    val y: Float = x  // 9.8765434E8 (note that some precision is lost in this case)
+
+    val face: Char = '☺'
+    val number: Int = face  // 9786
+
+  }
+  
 }
