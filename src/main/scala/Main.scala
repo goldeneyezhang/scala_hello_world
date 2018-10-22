@@ -1,4 +1,6 @@
 import scala.collection.mutable.ArrayBuffer
+import scala.util.Random
+
 object Main extends App {
   println(1)
   println(1+1)
@@ -122,7 +124,49 @@ object Main extends App {
  // Curring
   val numbers = List(1,2,3,4,5,6,7,8,9,10)
   val res = numbers.foldLeft(0)((m, n) => m + n)
+  val res2 =numbers.foldLeft(0)(_+_) 
   println(res)
+  println(res2)
+  val numberFunc = numbers.foldLeft(List[Int]())_
+  val squares = numberFunc((xs, x) => xs:+ x*x)
+  println(squares.toString())
+  // 复杂
+  val cubes = numberFunc((xs, x) => xs:+ x*x*x)
+  println(cubes.toString())
+
+  // Case Class
+  val frankenstein = Book("978-0486282114")
+  println(frankenstein)
+  var message1 = Message("Guillaume@quebec.ca","jorge@catalonia.es", "Ça va ?")
+  // message1.sender = "travis@washington.us"  // this line does not compile
+  println(message1.sender)
+  // Pattern
+  val patternX: Int = Random.nextInt(10)
+
+  patternX match {
+    case 0 => "zero"
+    case 1 => "one"
+    case 2 => "two"
+    case _ => "many"
+  }
+
+  var someSms = SMS("12345", "Are you there?")
+  val someVoiceRecording = VoiceRecording("Tom", "voicerecording.org/id/123")
+  println(Pattern.showNotification(someSms))  // prints You got an SMS from 12345! Message: Are you there?
+  println(Pattern.showNotification(someVoiceRecording))  // you received a Voice Recording from Tom! Click the link to hear it: voicerecording.org/id/123
+  val importantPeopleInfo = Seq("867-5309", "jenny@gmail.com")
+  val someSms2 = SMS("867-5309", "Are you there?")
+  val someVoiceRecording2 = VoiceRecording("Tom", "voicerecording.org/id/123")
+  val importantEmail = Email("jenny@gmail.com", "Drinks tonight?",  "I'm free after 5!")
+  val importantSms = SMS("867-5309", "I'm here! Where are you?")
+
+  println(Pattern.showImportantNotification(someSms,importantPeopleInfo))
+  println(Pattern.showImportantNotification(someVoiceRecording, importantPeopleInfo))
+  println(Pattern.showImportantNotification(importantEmail, importantPeopleInfo))
+  println(Pattern.showImportantNotification(importantSms, importantPeopleInfo))
+
+  val circle1 = new Circle(5.0)
+  println(circle1.area)
 }
 object IdFactory {
   private var counter = 0

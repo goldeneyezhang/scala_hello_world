@@ -1,4 +1,3 @@
-[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:182:1: expected class or object definition[0m
-[0m[[0m[31merror[0m] [0m[0mTrait Curring {[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Circle.scala:8:17: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    private def calculateArea(radius: Double): Double[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
