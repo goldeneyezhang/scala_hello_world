@@ -103,6 +103,26 @@ object Main extends App {
   val doubleSalary = (x: Int) => x*2
   val newSalaries = salaries.map(doubleSalary)
   salaries.map(x => println(x))
+  val salaryList : List[Double]= List(100.05d,200.03d,300d,400d,500d)
+  println(SalaryRaiser.smallPromotion(salaryList))
+  println(SalaryRaiser.bigPromotion(salaryList))
+  println(SalaryRaiser.hugePromotion(salaryList))
+
+  val domainName = "www.example.com"
+  def getURL = SalaryRaiser.urlBuilder(ssl=true, domainName)
+  val endpoint = "users"
+  val query= "id=1"
+  val url = getURL(endpoint, query)
+  println(url)
+
+  // Nested Methods
+ println("Factorial of 2: " + NestedMethods.factorial(2))
+ println("Factorial of 3: " + NestedMethods.factorial(10))
+
+ // Curring
+  val numbers = List(1,2,3,4,5,6,7,8,9,10)
+  val res = numbers.foldLeft(0)((m, n) => m + n)
+  println(res)
 }
 object IdFactory {
   private var counter = 0
@@ -128,20 +148,37 @@ object TypeHierarchy {
 
     val face: Char = '☺'
     val number: Int = face  // 9786
-
   }
   
 }
-object SaralyRaiser {
-  private def promotion(salaries: List[Double], promotionFunction:
+object SalaryRaiser {
+  private def promotion(salaries: List[Double], promotionFunction: Double => Double): List[Double] =
     salaries.map(promotionFunction)
 
   def smallPromotion(salaries: List[Double]): List[Double] = 
-    promotion(salaries,salary => salary * 1.1)
+    promotion(salaries,salary => salary * 1.1d)
 
   def bigPromotion(salaries: List[Double]): List[Double] =
     promotion(salaries, salary => salary * math.log(salary))
   
   def hugePromotion(salaries: List[Double]): List[Double] =
     promotion(salaries, salary => salary * salary)
+
+    // Functions that return funcitons
+    def urlBuilder(ssl: Boolean, domainName: String): (String,String) => String = {
+      val schema = if (ssl) "https://" else "http://"
+      (endpoint: String,query: String) => s"$schema$domainName/$endpoint?$query"
+      }
+}
+object NestedMethods {
+  def factorial(x: Int): Int = {
+    def fact(x: Int,accumulator: Int): Int = {
+      if (x <= 1) accumulator
+      else fact(x - 1,x * accumulator)
+    }
+    fact(x, 1)
+  }
+}
+trait Curring {
+  def foldLeft[B](z: B)(op :(B, A) => B): B
 }
