@@ -1,5 +1,6 @@
 import scala.collection.mutable.ArrayBuffer
 import scala.util.Random
+import scala.util.matching.Regex
 
 object Main extends App {
   println(1)
@@ -167,6 +168,33 @@ object Main extends App {
 
   val circle1 = new Circle(5.0)
   println(circle1.area)
+
+  // Regex
+  val numberPattern: Regex = "[0-9]".r
+  numberPattern.findFirstMatchIn("awesomepassword") match {
+      case Some(_) => println("Password OK")
+      case None => println("Password must contain a number")
+  }
+  val keyValPattern: Regex = "([0-9a-zA-Z-#() ]+): ([0-9a-zA-Z-#() ]+)".r
+  val input: String = 
+     """background-color: #A03300;
+    |background-image: url(img/header100.png);
+    |background-position: top center;
+    |background-repeat: repeat-x;
+    |background-size: 2160px 108px;
+    |margin: 0;
+    |height: 108px;
+    |width: 100%;""".stripMargin
+
+ for (patternMatch <- keyValPattern.findAllMatchIn(input))
+  println(s"key: ${patternMatch.group(1)} value: ${patternMatch.group(2)}")
+  // Extractor Objects
+  val customer1ID = CustomerID("Sukyong")
+  customer1ID match {
+    case CustomerID(name) => println(name)
+    case _ => println("Could not extract a CustomerID")
+  }
+  val CustomerID(name2) = "--asdfasdfasdf"
 }
 object IdFactory {
   private var counter = 0
