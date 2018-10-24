@@ -195,6 +195,36 @@ object Main extends App {
     case _ => println("Could not extract a CustomerID")
   }
   val CustomerID(name2) = "--asdfasdfasdf"
+
+  //For Comprehensions
+  val userBase = List(User("Travis", 28),
+    User("Kelly", 33),
+    User("Jennifer", 44),
+    User("Dennis", 23))
+
+  val twentySomethings = for (user <- userBase if(user.age >=20 && user.age < 30))
+    yield user.name
+  
+  twentySomethings.foreach(name => println(name)) 
+
+  Foobar.foo(10, 10) foreach {
+      case (i, j) =>
+          println(s"($i, $j) ") 
+  }
+
+  // Generic Classes
+  val stack = new Stack[Int]
+  stack.push(1)
+  stack.push(2)
+  println(stack.pop)
+  println(stack.pop)
+
+  val stack = new Stack[Fruit]
+  val apple = new Apple
+  val banana = new banana
+
+  stack.push(apple)
+  stack.push(banana)
 }
 object IdFactory {
   private var counter = 0
