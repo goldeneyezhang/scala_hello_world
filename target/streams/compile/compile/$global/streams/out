@@ -1,6 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:222:7: stack is already defined as value stack[0m
-[0m[[0m[31merror[0m] [0m[0m  val stack = new Stack[Fruit][0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:224:20: not found: type banana[0m
-[0m[[0m[31merror[0m] [0m[0m  val banana = new banana[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:238:34: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Printer[Animal][0m
+[0m[[0m[31merror[0m] [0m[0m required: Printer[Cat2][0m
+[0m[[0m[31merror[0m] [0m[0mNote: Animal >: Cat2, but class Printer is invariant in type A.[0m
+[0m[[0m[31merror[0m] [0m[0mYou may wish to define A as -A instead. (SLS 4.5)[0m
+[0m[[0m[31merror[0m] [0m[0m   ContravarianceTest.printMyCat(animalPrinter)[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -219,12 +219,23 @@ object Main extends App {
   println(stack.pop)
   println(stack.pop)
 
-  val stack = new Stack[Fruit]
+  val stack2 = new Stack[Fruit]
   val apple = new Apple
-  val banana = new banana
+  val banana = new Banana
+  // stack.push(apple)
+  // stack.push(banana)
 
-  stack.push(apple)
-  stack.push(banana)
+  // Covariance
+  val cats: List[Cat2] = List(Cat2("Whiskers"), Cat2("Tom"))
+  val dogs: List[Dog2] = List(Dog2("Fido"), Dog2("Rex"))
+   CovarianceTest.printAnimalNames(cats)
+   CovarianceTest.printAnimalNames(dogs)
+
+   val catPrinter: Printer[Cat2] = new CatPrinter
+   val animalPrinter: Printer[Animal] = new AnimalPrinter
+
+   ContravarianceTest.printMyCat(catPrinter)
+   ContravarianceTest.printMyCat(animalPrinter)
 }
 object IdFactory {
   private var counter = 0
