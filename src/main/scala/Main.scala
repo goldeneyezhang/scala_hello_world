@@ -236,6 +236,17 @@ object Main extends App {
 
    ContravarianceTest.printMyCat(catPrinter)
    ContravarianceTest.printMyCat(animalPrinter)
+
+   // Upper Type Bounds
+   val dogContainer = new PetContainer[Dog3](new Dog3)
+   val catContainer = new PetContainer[Cat3](new Cat3)
+
+   // this would not compile
+   // val lionContainer = new PetContainer[Lion3](new Lion3)
+   // Lower Type Bounds
+   val africanSwallowList = ListNode[AfricanSwallow](AfricanSwallow(),Nil())
+   val birdList: Node[Bird] = africanSwallowList
+   birdList.prepend(new EuropeanSwallow)
 }
 object IdFactory {
   private var counter = 0
