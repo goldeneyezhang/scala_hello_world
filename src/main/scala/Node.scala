@@ -7,7 +7,7 @@ case class ListNode[+B](h: B,t: Node[B]) extends Node[B] {
     def tail: Node[B] = t
 }
 
-case class Nil[+B]() extends Node[B] {
+case class MyNil[+B]() extends Node[B] {
     def prepend[U >: B](elem: U): ListNode[U] = ListNode(elem, this)
 }
 
