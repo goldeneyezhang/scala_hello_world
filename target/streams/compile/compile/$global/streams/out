@@ -1,4 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Cloneable.scala:3:8: '}' expected but eof found.[0m
-[0m[[0m[31merror[0m] [0m[0m        [0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Cloneable.scala:11:26: method clone in class Object cannot be accessed in Cloneable with Resetable[0m
+[0m[[0m[31merror[0m] [0m[0m Access to protected method clone not permitted because[0m
+[0m[[0m[31merror[0m] [0m[0m prefix type Cloneable with Resetable does not conform to[0m
+[0m[[0m[31merror[0m] [0m[0m object TestClone where the access takes place[0m
+[0m[[0m[31merror[0m] [0m[0m        val cloned = obj.clone()[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

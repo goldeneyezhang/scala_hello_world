@@ -260,7 +260,8 @@ object Main extends App {
     println("length = " + buf.length)
     println("content = " + buf.element) 
   // Compound Types
-
+  // Self -Type
+  
 }
 object IdFactory {
   private var counter = 0

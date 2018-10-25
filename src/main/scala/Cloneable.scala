@@ -6,3 +6,10 @@ trait Clonable extends java.lang.Cloneable {
 trait Resetable {
     def reset: Unit
 }
+object TestClone {
+    def cloneAndReset(obj: Cloneable with Resetable): Clonable = {
+        val cloned = obj.clone()
+        obj.reset
+        cloned
+    }
+}
