@@ -272,6 +272,28 @@ object Main extends App {
   val yibo = new Man("Yibo")
   implicit def man2SuperMan(man: Man): SuperMan = new SuperMan(man.name)
   yibo.fly
+  // Polymorphic Methods
+  println(DuplicateTest.listOfDuplicates[Int](3, 4)) 
+  println(DuplicateTest.listOfDuplicates("La", 8)) 
+  // Type Inference
+  // Operators
+  val vector1 = Vec(1.0, 1.0)
+  val vector2 = Vec(2.0, 2.0)
+  val vector3 = vector1 + vector2
+  println(vector3.x)
+
+  //By-name Parameters
+  def whileLoop(condition: => Boolean)(body: => Unit): Unit =
+  if (condition) {
+    body
+    whileLoop(condition)(body)
+  }
+var i = 2
+whileLoop (i > 0) {
+  println(i)
+  i -= 1
+}  // prints 2 1
+
 }
 object IdFactory {
   private var counter = 0
