@@ -261,7 +261,8 @@ object Main extends App {
     println("content = " + buf.element) 
   // Compound Types
   // Self -Type
-  
+  val realBeyonce = new VerifiedTweeter("Beyonce")
+  realBeyonce.tweet("Just spilled my glass of lemonade") // prints "real Beyoncé: Just spilled my glass of lemonade"
 }
 object IdFactory {
   private var counter = 0

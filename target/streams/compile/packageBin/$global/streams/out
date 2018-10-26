@@ -18,6 +18,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\BufferTest$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Foobar$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Foobar$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TestClone.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\TestClone.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	TGreeter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\TGreeter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Point3.class[0m
@@ -52,6 +54,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\EuropeanSwallow.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	NestedMethods.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\NestedMethods.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Tweeter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Tweeter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Iterator.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Iterator.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Email.class[0m
@@ -76,6 +80,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Dog3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	NestedMethods$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\NestedMethods$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VerifiedTweeter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\VerifiedTweeter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Apple.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Apple.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Email$.class[0m
@@ -130,6 +136,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Graph.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	TypeHierarchy$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\TypeHierarchy$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	User2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\User2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Cat2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Cat2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Bird.class[0m
@@ -194,6 +202,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Message$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Point2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\Point2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	TestClone$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\TestClone$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RichIterator.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  E:\scala\hello-world\target\scala-2.12\classes\RichIterator.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	HairColor.class[0m
