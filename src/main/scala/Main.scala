@@ -267,6 +267,11 @@ object Main extends App {
   // Implicit Parameters
   val ttt:Array[String] = Array()
   ImplicitTest.main2(ttt)
+  implicit val nameZhang = "zhang"
+  List2OrderedTest.sayHello(25)
+  val yibo = new Man("Yibo")
+  implicit def man2SuperMan(man: Man): SuperMan = new SuperMan(man.name)
+  yibo.fly
 }
 object IdFactory {
   private var counter = 0
