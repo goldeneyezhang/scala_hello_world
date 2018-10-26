@@ -263,6 +263,10 @@ object Main extends App {
   // Self -Type
   val realBeyonce = new VerifiedTweeter("Beyonce")
   realBeyonce.tweet("Just spilled my glass of lemonade") // prints "real Beyoncé: Just spilled my glass of lemonade"
+
+  // Implicit Parameters
+  val ttt:Array[String] = Array()
+  ImplicitTest.main2(ttt)
 }
 object IdFactory {
   private var counter = 0

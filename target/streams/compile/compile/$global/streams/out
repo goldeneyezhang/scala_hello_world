@@ -1,4 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Selftype.scala:7:47: not found: value username[0m
-[0m[[0m[31merror[0m] [0m[0m    def tweet(tweetText: String) = println(s"$username: $tweetText")[0m
-[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\scala\hello-world\src\main\scala\Main.scala:269:22: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Array[Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m required: Array[String][0m
+[0m[[0m[31merror[0m] [0m[0mNote: Nothing <: String, but class Array is invariant in type T.[0m
+[0m[[0m[31merror[0m] [0m[0mYou may wish to investigate a wildcard type such as `_ <: String`. (SLS 3.2.10)[0m
+[0m[[0m[31merror[0m] [0m[0m  ImplicitTest.main2(ttt)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
